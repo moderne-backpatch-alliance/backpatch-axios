@@ -1,6 +1,6 @@
 schema: osera-patch-evidence/0.1.0
 producer: moderne
-release: 0.21.5-backpatch-00002
+release: 0.21.5-backpatch-00003
 baseline: v0.21.4+backpatch.baseline
 fixes:
   - cve: CVE-2023-45857
@@ -18,12 +18,20 @@ fixes:
     basis: adapted
     artifacts:
       - axios
-    note: "New in this release; upstream's fix in 0.30.0 (02c3c69, c010622, 32c7bcc), adapted to 0.21.4. It closes the advisory: axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL."
+    note: "Carried from 0.21.5-backpatch-00002; upstream's fix in 0.30.0 (02c3c69, c010622, 32c7bcc), adapted to 0.21.4. It closes the advisory: axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL."
+  - cve: CVE-2026-25639
+    upstream_fix_url: https://github.com/axios/axios/commit/d7ff1409c68168d3057fc3891f911b2b92616f9e
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-25639
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/commit/25d5a33
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 0.30.3, adapted to 0.21.4. It closes the advisory: Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig."
 tests:
-  commit: d1d9c3ca89d446c697fecdf620935546c92ff9c8
+  commit: 25d5a3355879fca985f35eed7598effcb479e0c0
   command: npm run build and grunt usebanner, npm pack --ignore-scripts, then grunt eslint mochaTest ts and karma start karma.conf.js --single-run --browsers ChromeHeadless in the tested tree, one JUnit test per command from its exit status
   runtime: Node.js v16.20.2, npm 8.19.4, Chrome Headless, macOS 27.2 arm64
-  report: axios-0.21.5-backpatch-00002-tests.zip
-  report_sha256: f6d49896c0d66a21d90cd2dafcd8c231a67f8e255552333dd22c986fedd1a7e6
+  report: axios-0.21.5-backpatch-00003-tests.zip
+  report_sha256: 8ed0e4f939cdc5dd1001f4c41fa918af3431b1f7cd3cabdbe7e15eee1214622c
   result: pass
-  note: "upstream's grunt test tasks (eslint, mochaTest, ts) and karma (ChromeHeadless) on the tested tree at the tested commit: 2 tests, 2 passed, 0 failed, 0 skipped. The CVE tests (test/specs/core/buildFullPath.spec.js), with this release's production lines reverted at the tested commit: 1 tests, 0 passed, 1 failed, 0 skipped; with them: 1 tests, 1 passed, 0 failed, 0 skipped. Built with the release flow's build (npm run build = NODE_ENV=production grunt build, then grunt usebanner, banner year 2021) rebuilding dist/ from the tested tree, npm pack --ignore-scripts in a directory named axios, 32 of npmjs's 44 files for 0.21.4 are identical; the rest are CHANGELOG.md, README.md, dist/axios.js, dist/axios.map, dist/axios.min.js, dist/axios.min.map, index.d.ts, lib/adapters/http.js, lib/adapters/xhr.js, lib/core/buildFullPath.js, lib/core/mergeConfig.js, package.json. The archive's file-origins.yaml maps each packaged file to the commit, or names its inputs and build."
+  note: "upstream's grunt test tasks (eslint, mochaTest, ts) and karma (ChromeHeadless) on the tested tree at the tested commit: 2 tests, 2 passed, 0 failed, 0 skipped. The CVE tests (test/unit/core/prototypePollution.js), with this release's production lines reverted at the tested commit: 1 tests, 0 passed, 1 failed, 0 skipped; with them: 1 tests, 1 passed, 0 failed, 0 skipped. Built with the release flow's build (npm run build = NODE_ENV=production grunt build, then grunt usebanner, banner year 2021) rebuilding dist/ from the tested tree, npm pack --ignore-scripts in a directory named axios, 31 of npmjs's 44 files for 0.21.4 are identical; the rest are CHANGELOG.md, README.md, dist/axios.js, dist/axios.map, dist/axios.min.js, dist/axios.min.map, index.d.ts, lib/adapters/http.js, lib/adapters/xhr.js, lib/core/buildFullPath.js, lib/core/mergeConfig.js, lib/utils.js, package.json. The archive's file-origins.yaml maps each packaged file to the commit, or names its inputs and build."

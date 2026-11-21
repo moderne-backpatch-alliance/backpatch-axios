@@ -1,0 +1,109 @@
+schema: osera-patch-evidence/0.1.0
+producer: moderne
+release: 1.18.2-backpatch-00001
+baseline: v1.18.1+backpatch.baseline
+fixes:
+  - cve: CVE-2026-101898
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101898
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: HTTP/2 adapter bypasses configured DNS lookup and proxy controls."
+  - cve: CVE-2026-101899
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101899
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: CIDR-form NO_PROXY entries are ignored, causing proxy exclusion bypass for internal IP ranges."
+  - cve: CVE-2026-101900
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101900
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: Fetch Adapter Header Injection via Inherited FormData getHeaders."
+  - cve: CVE-2026-101901
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101901
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: Denial of Service via Unhandled 'error' Event in HTTP/2 ClientHttp2Session Initialization."
+  - cve: CVE-2026-101902
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101902
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: Prototype-Pollution Gadget in the Default Instance Allows Inherited Object.prototype.method to Override HTTP Method."
+  - cve: CVE-2026-101903
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101903
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: ReDoS in fromDataURI data: URL parser freezes the Node event loop (DoS)."
+  - cve: CVE-2026-101904
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101904
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: Header Injection via Inherited headers After Minimal Interceptor."
+  - cve: CVE-2026-101905
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101905
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: Node HTTP adapter prototype-pollution gadget allows request socket hijack via inherited createConnection."
+  - cve: CVE-2026-101906
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101906
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: ReDoS (O(N²)) in shouldBypassProxy host normalization, reachable via untrusted redirect Location."
+  - cve: CVE-2026-101907
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101907
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: maxRedirects: 0 is not enforced by the fetch adapter, allowing redirect-based SSRF."
+  - cve: CVE-2026-101908
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101908
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: Prototype pollution gadget in fetch adapter can alter outbound requests."
+  - cve: CVE-2026-101909
+    upstream_fix_url: https://github.com/axios/axios/commit/d19040bda7a8be2f82c3c6e1a5bc03917daee39a
+    advisory_url: https://nvd.nist.gov/vuln/detail/CVE-2026-101909
+    patch_commit_url: https://github.com/moderne-backpatch-alliance/backpatch-axios/compare/a2eb111~1...c7048bf
+    basis: adapted
+    artifacts:
+      - axios
+    note: "New in this release; upstream's fix in 1.20.0 (d19040b, f8df2e2), adapted to 1.18.1. It closes the advisory: Axios: Prototype Pollution Gadget in axios toFormData Options."
+tests:
+  commit: c7048bfb5ff991b210af49dd4480f97709f93b89
+  command: npm run build (gulp clear, rollup -c -m) with the tag's lockfile installed, npm pack --ignore-scripts, npm install of the tarball into an empty consumer, then vitest run on the tested commit's tests/unit with the installed package's lib/ (node environment, 10 s test timeout), each test recorded into the JUnit report
+  runtime: Node.js v22.16.0 (build), Node.js v26.9.0 (suite), rollup 4.61.1, vitest 4.1.8, macOS 27.2 arm64
+  report: axios-1.18.2-backpatch-00001-tests.zip
+  report_sha256: c6bcf503e07c08177c988e384c0ae26041f45a5b20293c8f6b155afccb41e7bd
+  result: pass
+  note: "upstream's vitest unit project (tests/unit/**/*.test.js) against the packed package installed into a consumer, on Node.js v26.9.0 at the tested commit: 946 tests, 946 passed, 0 failed, 0 skipped. The CVE tests (tests/browser/fetchCache.browser.test.js tests/unit/adapters/fetch.test.js tests/unit/adapters/http.test.js tests/unit/fromDataURI.test.js tests/unit/helpers/Http2Sessions.test.js tests/unit/helpers/resolveConfig.test.js tests/unit/helpers/shouldBypassProxy.test.js tests/unit/prototypePollution.test.js tests/unit/toFormData.test.js tests/unit/utils/isX.test.js), with this release's production lines reverted at the tested commit: 517 tests, 475 passed, 42 failed, 0 skipped, test files exiting non-zero: vitest; with them: 517 tests, 517 passed, 0 failed, 0 skipped. Built with npm run build (gulp clear, rollup -c -m) on Node.js v22.16.0 in a directory named axios, 66 of npmjs's 85 files for 1.18.1 are identical; the rest are dist/axios.js, dist/axios.min.js, dist/axios.min.js.map, dist/browser/axios.cjs, dist/esm/axios.js, dist/esm/axios.min.js, dist/esm/axios.min.js.map, dist/node/axios.cjs, lib/adapters/fetch.js, lib/adapters/http.js, lib/core/Axios.js, lib/core/dispatchRequest.js, lib/helpers/Http2Sessions.js, lib/helpers/fromDataURI.js, lib/helpers/resolveConfig.js, lib/helpers/shouldBypassProxy.js, lib/helpers/toFormData.js, lib/utils.js, package.json. The archive's file-origins.yaml maps each packaged file to the commit, or names its inputs and build."

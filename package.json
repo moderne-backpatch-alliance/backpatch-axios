@@ -1,6 +1,6 @@
 {
   "name": "axios",
-  "version": "0.21.5-backpatch-00002",
+  "version": "0.21.5-backpatch-00003",
   "description": "Promise based HTTP client for the browser and node.js",
   "main": "index.js",
   "scripts": {
